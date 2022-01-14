@@ -12,4 +12,23 @@ For the above scenario, we only need API implementation. No front-end work is ne
 <br><br>
 <h1> How it works </h1>
 
-<p> 1: Clone project:  </p>
+<p> 1: Clone project:  git clone https://github.com/imran137/Admin-Referrals-Link.git </p>
+
+<p> 
+    2: Create database and update credentials in .env file then execute command 
+    <pre>php artisan migrate</pre>
+</p>
+
+<p> 
+    3: For passport token install execute command 
+    <pre>php artisan passport:install</pre>
+</p>
+
+<p> 
+    4: To secure the public API execute command
+    <pre>php artisan passport:client --client</pre>
+    
+    After this command add client_id and client_secret in API.
+    <pre>http://127.0.0.1:8000/oauth/token</pre>
+    after hit this api get the token and use for authorization of register and login api.
+</p>
