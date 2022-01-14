@@ -32,3 +32,7 @@ For the above scenario, we only need API implementation. No front-end work is ne
     <pre>http://127.0.0.1:8000/oauth/token</pre>
     after hit this api get the token and use for authorization of register and login api.
 </p>
+
+<p> 
+    5: Please create email credentials and use in .env file to send email invitation to user
+</p>
